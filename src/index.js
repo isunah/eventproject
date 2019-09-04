@@ -21,5 +21,6 @@ conexion.connect(function(err) {
  
   console.log('connected as id ' + conexion.threadId);
 });
+app.use('/api', require("./routes/index"));
 
 app.listen(3000);
