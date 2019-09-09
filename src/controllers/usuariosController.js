@@ -63,4 +63,11 @@ usuarioController.login = (req,res)=>{
     })
 }
 
+usuarioController.logout = (req,res)=>{
+    req.session.destroy();
+    return res.status(200).json({
+        mensaje:'deslogueado'
+    })
+}
+
 module.exports = usuarioController

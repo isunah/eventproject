@@ -1,5 +1,4 @@
 const mysql = require("mysql");
-console.log(process.env.jsonConexion.user);
 /*
 {
     user:"siintech_is",
